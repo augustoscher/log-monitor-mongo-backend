@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: mongo:3.6
+    ports:
+      - 27017:27017
+  backend:
+    image: golang:1.11.5
+    volumes:
+      - .:/usr/local/go/src/bitbucket.org/augustoscher/logs-monitor-api
+    ports:
+      - 3000:3000
+    command: bash -c "cd /usr/local/go/src/bitbucket.org/augustoscher/logs-monitor-api && go get && go run app.go"
+    depends_on:
+      - db
