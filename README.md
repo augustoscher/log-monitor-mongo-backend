@@ -37,7 +37,7 @@ g) Iniciar o backend. Comando: go run app.go
 
 Este processo deverá inciar a API, ficando disponível na porta 3000.  
 
-### Testes
+### 3- Testes
 a) GET ALL  
 http://localhost:3000/logs  
 
