@@ -1,4 +1,6 @@
-# logs-monitor-docker-mongo
+# logs-monitor-mongo-backend
+Golang API that's responsible for receiving logs of applications.
+MongoDB version.
 
 ### Ambientes
 1) Ambiente Docker  
@@ -46,6 +48,7 @@ http://localhost:3000/logs/1
 
 c) POST  
 http://localhost:3000/logs  
+```json
 {
 "codigo_filial": "1",
 "nome_filial": "Teste",
@@ -54,6 +57,6 @@ http://localhost:3000/logs
 "conteudo_mensagem_erro": "NPE",
 "data_hora": "19/02/2019"
 }
-
+```
 
 
